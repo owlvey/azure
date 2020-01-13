@@ -4,6 +4,7 @@ resources:
     type: github    
     name: owlvey/owlvey_falcon
     endpoint: owlveygithub  
+    ref: master
     
 variables:
   tag: '$(Build.BuildId)'  
