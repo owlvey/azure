@@ -1,3 +1,10 @@
+resources:       
+  repositories:
+  - repository: OwlveyFalcon
+    type: github    
+    name: owlvey/owlvey_falcon
+    endpoint: owlveygithub  
+    
 variables:
   tag: '$(Build.BuildId)'  
 
