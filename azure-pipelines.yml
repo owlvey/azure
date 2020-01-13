@@ -17,7 +17,7 @@ stages:
     pool:
       vmImage: 'ubuntu-18.04'
     steps:
-    - checkout: github://owlvey/owlvey_falcon        
+    - checkout: OwlveyFalcon
     - bash: |
         pwd
         ls -a
