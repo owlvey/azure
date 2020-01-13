@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "4e1be6bc-713c-47f7-9a75-4b528ddb9307"
+        },
+        "name": {
+            "value": "owlvey-falcon-prod-api"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "hostingEnvironment": {
+            "value": ""
+        },
+        "hostingPlanName": {
+            "value": "owlvey-prod-plan"
+        },
+        "serverFarmResourceGroup": {
+            "value": "owlvey-prod-rg"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "linuxFxVersion": {
+            "value": "DOTNETCORE|3.1"
+        }
+    }
+}

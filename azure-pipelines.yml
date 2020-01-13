@@ -1,0 +1,25 @@
+resources:       
+  repositories:
+  - repository: OwlveyFalcon
+    type: github    
+    name: owlvey/owlvey_falcon
+    endpoint: owlveygithub    
+
+variables:
+  tag: '$(Build.BuildId)'  
+
+stages:
+- stage: ApiBuild
+  displayName: Build API project
+  jobs:  
+  - job: build
+    displayName: Build
+    pool:
+      vmImage: 'ubuntu-18.04'
+    steps:
+    - checkout: github://owlvey/owlvey_falcon        
+    - bash: |
+        pwd
+        ls -a
+        echo $(Build.BuildId)
+      displayName: list folders    

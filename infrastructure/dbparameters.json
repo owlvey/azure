@@ -1,0 +1,135 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "administratorLogin": {
+            "value": "falconAdmin"
+        },
+        "administratorLoginPassword": {
+            "value": "Pa$$w0rd"
+        },
+        "collation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "databaseName": {
+            "value": "owlvey-prod-falcon-db"
+        },
+        "tier": {
+            "value": "GeneralPurpose"
+        },
+        "skuName": {
+            "value": "GP_S_Gen5_2"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "maxSizeBytes": {
+            "value": 21474836480
+        },
+        "sampleName": {
+            "value": ""
+        },
+        "serverName": {
+            "value": "owlvey-prod-falcon--dbserver"
+        },
+        "licenseType": {
+            "value": ""
+        },
+        "readScaleOut": {
+            "value": "Disabled"
+        },
+        "zoneRedundant": {
+            "value": false
+        },
+        "minCapacity": {
+            "value": "0.5"
+        },
+        "autoPauseDelay": {
+            "value": "60"
+        },
+        "numberOfReplicas": {
+            "value": 0
+        },
+        "enableADS": {
+            "value": false
+        },
+        "allowAzureIps": {
+            "value": false
+        },
+        "allowClientIp": {
+            "value": false
+        },
+        "clientIpValue": {
+            "value": "179.6.196.14"
+        },
+        "databaseTags": {
+            "value": {}
+        },
+        "serverTags": {
+            "value": {}
+        },
+        "enableVA": {
+            "value": false
+        },
+        "enablePrivateEndpoint": {
+            "value": true
+        },
+        "privateEndpointNestedTemplateId": {
+            "value": "pe-616bd897-83f5-43fb-bbc2-b0f0df579009"
+        },
+        "privateEndpointSubscriptionId": {
+            "value": "4e1be6bc-713c-47f7-9a75-4b528ddb9307"
+        },
+        "privateEndpointResourceGroup": {
+            "value": "owlvey-prod-rg"
+        },
+        "privateEndpointName": {
+            "value": "owlvey-prod-dbserver-private-endpoint"
+        },
+        "privateEndpointLocation": {
+            "value": "eastus"
+        },
+        "privateEndpointSubnetId": {
+            "value": "/subscriptions/4e1be6bc-713c-47f7-9a75-4b528ddb9307/resourceGroups/owlvey-prod-rg/providers/Microsoft.Network/virtualNetworks/owlvey-prod-vnet/subnets/backend"
+        },
+        "privateLinkServiceName": {
+            "value": "owlvey-prod-dbserver-private-endpoint"
+        },
+        "privateLinkServiceServiceId": {
+            "value": "/subscriptions/4e1be6bc-713c-47f7-9a75-4b528ddb9307/resourceGroups/owlvey-prod-rg/providers/Microsoft.Sql/servers/owlvey-prod-falcon--dbserver"
+        },
+        "privateEndpointVnetSubscriptionId": {
+            "value": "4e1be6bc-713c-47f7-9a75-4b528ddb9307"
+        },
+        "privateEndpointVnetResourceGroup": {
+            "value": "owlvey-prod-rg"
+        },
+        "privateEndpointVnetName": {
+            "value": "owlvey-prod-vnet"
+        },
+        "privateEndpointSubnetName": {
+            "value": "backend"
+        },
+        "enablePrivateDnsZone": {
+            "value": true
+        },
+        "privateEndpointDnsRecordUniqueId": {
+            "value": "616bd897-83f5-43fb-bbc2-b0f0df57900c"
+        },
+        "privateEndpointTemplateLink": {
+            "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.0.20200110.12-/DeploymentTemplates/PrivateEndpoint.json"
+        },
+        "privateDnsForPrivateEndpointTemplateLink": {
+            "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.0.20200110.12-/DeploymentTemplates/PrivateDnsForPrivateEndpoint.json"
+        },
+        "privateDnsForPrivateEndpointNicTemplateLink": {
+            "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.0.20200110.12-/DeploymentTemplates/PrivateDnsForPrivateEndpointNic.json"
+        },
+        "privateDnsForPrivateEndpointIpConfigTemplateLink": {
+            "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.0.20200110.12-/DeploymentTemplates/PrivateDnsForPrivateEndpointIpConfig.json"
+        },
+        "clientIpRuleName": {
+            "value": "ClientIp-2020-1-12_19-34-31"
+        }
+    }
+}
