@@ -5,6 +5,12 @@ resources:
     name: owlvey/owlvey_falcon
     endpoint: owlveygithub  
     ref: master
+  
+  - repository: OwlveyIdenitty
+    type: github    
+    name: owlvey/owlvey_identity
+    endpoint: owlveygithub  
+    ref: master
     
 variables:
   tag: '$(Build.BuildId)'  
@@ -19,6 +25,7 @@ stages:
       vmImage: 'ubuntu-18.04'
     steps:
     - checkout: OwlveyFalcon
+    - checkout: OwlveyIdenitty    
     - bash: |
         pwd
         ls -a
