@@ -2,6 +2,8 @@
 
 resource_group="owlvey-prod-rg"
 
+az keyvault update  --name "owlvey-prod-vault" --enabled-for-template-deployment true
+
 az configure --defaults location=eastus
 
 az group create -n $resource_group
